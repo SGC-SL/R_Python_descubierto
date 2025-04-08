@@ -1117,7 +1117,7 @@
     "href": "Presentacion/presentación_ejemplo.html#section-35",
     "title": "Descubriendo R y Python",
     "section": "",
-    "text": "Modelos de epidemiología (SIR)\n\\[\\begin{equation}\n\\frac{\\textit{d}S}{\\textit{dt}} =-\\lambda \\cdot S \\nonumber\n\\end{equation}\\] \\[\\begin{equation}\n\\frac{\\textit{d}I}{\\textit{dt}} =\\lambda \\cdot S - \\gamma \\cdot I \\nonumber\n\\end{equation}\\] \\[\\begin{equation}\n\\frac{\\textit{d}R}{\\textit{dt}} =\\gamma \\cdot I \\nonumber\n\\end{equation}\\] \\[\\begin{equation}\n\\lambda= \\beta \\cdot \\frac{I}{N} \\nonumber\n\\end{equation}\\]"
+    "text": "Modelos de epidemiología (SIR)\n\\[\\begin{equation}\nI' = 0\n\\end{equation}\\] \\[\\begin{equation}\n\\beta \\cdot SI = \\gamma \\cdot I \\nonumber\n\\end{equation}\\] \\[\\begin{equation}\nS = \\frac{\\gamma}{\\beta}\n\\end{equation}\\] \\[\\begin{equation}\nR + I = 1- \\frac{\\gamma}{\\beta} \\nonumber\n\\end{equation}\\]"
   },
   {
     "objectID": "Presentacion/presentación_ejemplo.html#section-36",
@@ -1572,21 +1572,21 @@
     "href": "Presentacion/presentación_ejemplo.html#section-38",
     "title": "Descubriendo R y Python",
     "section": "",
-    "text": "Teoría de juegos"
+    "text": "Mineria de texto.\n\n\n\nAnálisis geoespaciales.\n\n\n\n\nProblemas de optimización."
   },
   {
     "objectID": "Presentacion/presentación_ejemplo.html#section-40",
     "href": "Presentacion/presentación_ejemplo.html#section-40",
-    "title": "Descubriendo R y Python en Osakidetza",
+    "title": "Descubriendo R y Python",
     "section": "",
-    "text": "Sólo el conocimiento nos dará libertad\n\nSólo la libertad nos dará la capacidad de cuidar\n\n\nConocimiento➡️ Libertad➡️ Cuidar"
+    "text": "Factorización de números primos\n\nPython es muy útil para operaciones aritméticas y cálculos de números primos.\nLos números primos (2, 3, 5, 7, 11, 13…) son muy útiles en encriptación (Short)\nHay primos muy grandes: 2147483647 o 2305843009213693951"
   },
   {
     "objectID": "Presentacion/presentación_ejemplo.html#section-41",
     "href": "Presentacion/presentación_ejemplo.html#section-41",
     "title": "Descubriendo R y Python",
     "section": "",
-    "text": "Revisión de la literatura\n\n\nRecogida de datos\n\n\nAnálisis de datos\n\n\nDifusión"
+    "text": "Texto escrito (Revistas científicas).\n\n\n\nPonencias (Congresos y conferencias).\n\n\n\n\nInterna (Cuadro de mando).\n\n\n\n\nGlobal (Páginas web)."
   },
   {
     "objectID": "Presentacion/presentación_ejemplo.html#section-37",
@@ -1600,14 +1600,14 @@
     "href": "Presentacion/presentación_ejemplo.html#section-39",
     "title": "Descubriendo R y Python",
     "section": "",
-    "text": "Texto escrito (Revistas científicas).\n\n\n\nPonencias (Congresos y conferencias).\n\n\n\n\nInterna (Cuadro de mando).\n\n\n\n\nGlobal (Páginas web)."
+    "text": "Teoría de juegos"
   },
   {
     "objectID": "Presentacion/presentación_ejemplo.html#section-43",
     "href": "Presentacion/presentación_ejemplo.html#section-43",
     "title": "Descubriendo R y Python",
     "section": "",
-    "text": "Sólo el conocimiento nos dará libertad\n\nSólo la libertad nos dará la capacidad de cuidar\n\n\nConocimiento➡️ Libertad➡️ Cuidar"
+    "text": "Revisión de la literatura\n\n\nRecogida de datos\n\n\nAnálisis de datos\n\n\nDifusión"
   },
   {
     "objectID": "Presentacion/presentación_ejemplo.html#section-44",
@@ -1622,5 +1622,19 @@
     "title": "Descubriendo R y Python",
     "section": "En el café del turno…",
     "text": "En el café del turno…\n\n¡Comenzamos!"
+  },
+  {
+    "objectID": "Presentacion/presentación_ejemplo.html#section-45",
+    "href": "Presentacion/presentación_ejemplo.html#section-45",
+    "title": "Descubriendo R y Python",
+    "section": "",
+    "text": "Sólo el conocimiento nos dará libertad\n\nSólo la libertad nos dará la capacidad de cuidar\n\n\nConocimiento➡️ Libertad➡️ Cuidar"
+  },
+  {
+    "objectID": "Presentacion/presentación_ejemplo.html#section-46",
+    "href": "Presentacion/presentación_ejemplo.html#section-46",
+    "title": "Descubriendo R y Python",
+    "section": "",
+    "text": "Conocimiento➡️ Libertad➡️ Cuidar\n\n\n\n\n\n9 de abril de 2025. Descubriendo R y Python"
   }
 ]
