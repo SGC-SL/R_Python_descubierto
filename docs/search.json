@@ -977,14 +977,14 @@
     "href": "Presentacion/presentación_ejemplo.html#section-18",
     "title": "Descubriendo R y Python",
     "section": "",
-    "text": "Una base de datos es una colección organizada de información que se almacena electrónicamente y a la que se puede consultar de forma organizada\n\nBases de datos SQLBases de datos no solo SQL\n\n\nOrganizan la información en tablas estructuradas previamente.\n\n\n\nOrganizan la información de forma dinámica (Como cuadernos con hojas)."
+    "text": "Una base de datos es una colección organizada de información que se almacena electrónicamente y a la que se puede consultar de forma organizada\n\nBases de datos SQLBases de datos no solo SQL\n\n\nOrganizan la información en tablas estructuradas previamente.\n \n\n\nOrganizan la información de forma dinámica (Como cuadernos con hojas)."
   },
   {
     "objectID": "Presentacion/presentación_ejemplo.html#section-19",
     "href": "Presentacion/presentación_ejemplo.html#section-19",
     "title": "Descubriendo R y Python",
     "section": "",
-    "text": "Cuadernos de recogida de datos electrónicos\n\nRapidez y automatización\nMenos errores humanos\nFacilidad de almacenamiento y acceso\nSeguridad y respaldo\nAnálisis avanzado y visualización\nIntegración con otros sistemas\nEscalabilidad"
+    "text": "Una base de datos es una colección organizada de información que se almacena electrónicamente y a la que se puede consultar de forma organizada\n\nBases de datos SQLBases de datos no solo SQL\n\n\nOrganizan la información en tablas estructuradas previamente.\n \n\n\nOrganizan la información de forma dinámica (Como cuadernos con hojas)."
   },
   {
     "objectID": "Presentacion/presentación_ejemplo.html#procesamiento-estadístico",
@@ -998,63 +998,63 @@
     "href": "Presentacion/presentación_ejemplo.html#section-20",
     "title": "Descubriendo R y Python",
     "section": "",
-    "text": "Estadística descriptivaEstadística inferencial\n\n\nEstadística destinada al resumen de datos a través de valores y gráficos.\nTanto R como Python permiten realizan este tipo de análisis.\n\n\nEstadística destinada a encontrar asociaciones. Tiene dos enfoques: frecuentista y bayesiano.\nTanto R como Python permiten realizar este tipo de análisis."
+    "text": "Cuadernos de recogida de datos electrónicos\n\nRapidez y automatización\nMenos errores humanos\nFacilidad de almacenamiento y acceso\nSeguridad y respaldo\nAnálisis avanzado y visualización\nIntegración con otros sistemas\nEscalabilidad"
   },
   {
     "objectID": "Presentacion/presentación_ejemplo.html#section-21",
     "href": "Presentacion/presentación_ejemplo.html#section-21",
     "title": "Descubriendo R y Python",
     "section": "",
-    "text": "Ejemplo estadística descriptiva\n\n# 1. Generamos de datos simulados\nset.seed(123) # Fijamos la semilla para reproducibilidad\n\n# Creamos dos grupos con datos simulados\ngrupo_A &lt;- rnorm(50, mean = 70, sd = 10) # Grupo A: media 70, desviación estándar 10\ngrupo_B &lt;- rnorm(50, mean = 75, sd = 12) # Grupo B: media 75, desviación estándar 12\n\n# Combinamos los datos en un dataframe\ndatos &lt;- data.frame(\n  Grupo = rep(c(\"A\", \"B\"), each = 50),\n  Valor = c(grupo_A, grupo_B)\n)\n\n# ============================================\n# 2. Análisis descriptivo\n# ============================================\n\n# Resumen estadístico general\nsummary(datos)\n\nlibrary(dplyr)\nresumen_por_grupo &lt;- datos %&gt;%\n  group_by(Grupo) %&gt;%\n  summarise(\n    Media = mean(Valor),\n    Mediana = median(Valor),\n    Desviacion_Estandar = sd(Valor),\n    Minimo = min(Valor),\n    Maximo = max(Valor)\n  )\nprint(resumen_por_grupo)\n\n# ============================================\n# 3. Visualización de datos\n# ============================================\n\nlibrary(ggplot2)\n\n# Boxplot para comparar los grupos\nggplot(datos, aes(x = Grupo, y = Valor, fill = Grupo)) +\n  geom_boxplot() +\n  labs(title = \"Comparación de Grupos\", x = \"Grupo\", y = \"Valor\") +\n  theme_minimal()"
+    "text": "Estadística descriptivaEstadística inferencial\n\n\nEstadística destinada al resumen de datos a través de valores y gráficos.\nTanto R como Python permiten realizan este tipo de análisis.\n\n\nEstadística destinada a encontrar asociaciones. Tiene dos enfoques: frecuentista y bayesiano.\nTanto R como Python permiten realizar este tipo de análisis."
   },
   {
     "objectID": "Presentacion/presentación_ejemplo.html#section-22",
     "href": "Presentacion/presentación_ejemplo.html#section-22",
     "title": "Descubriendo R y Python",
     "section": "",
-    "text": "Resultados\n\n\n# A tibble: 2 × 6\n  Grupo Media Mediana Desviacion_Estandar Minimo Maximo\n  &lt;chr&gt; &lt;dbl&gt;   &lt;dbl&gt;               &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;\n1 A      70.3    69.3                9.26   50.3   91.7\n2 B      76.8    76.8               10.9    47.3  101."
+    "text": "Ejemplo estadística descriptiva\n\n# 1. Generamos de datos simulados\nset.seed(123) # Fijamos la semilla para reproducibilidad\n\n# Creamos dos grupos con datos simulados\ngrupo_A &lt;- rnorm(50, mean = 70, sd = 10) # Grupo A: media 70, desviación estándar 10\ngrupo_B &lt;- rnorm(50, mean = 75, sd = 12) # Grupo B: media 75, desviación estándar 12\n\n# Combinamos los datos en un dataframe\ndatos &lt;- data.frame(\n  Grupo = rep(c(\"A\", \"B\"), each = 50),\n  Valor = c(grupo_A, grupo_B)\n)\n\n# ============================================\n# 2. Análisis descriptivo\n# ============================================\n\n# Resumen estadístico general\nsummary(datos)\n\nlibrary(dplyr)\nresumen_por_grupo &lt;- datos %&gt;%\n  group_by(Grupo) %&gt;%\n  summarise(\n    Media = mean(Valor),\n    Mediana = median(Valor),\n    Desviacion_Estandar = sd(Valor),\n    Minimo = min(Valor),\n    Maximo = max(Valor)\n  )\nprint(resumen_por_grupo)\n\n# ============================================\n# 3. Visualización de datos\n# ============================================\n\nlibrary(ggplot2)\n\n# Boxplot para comparar los grupos\nggplot(datos, aes(x = Grupo, y = Valor, fill = Grupo)) +\n  geom_boxplot() +\n  labs(title = \"Comparación de Grupos\", x = \"Grupo\", y = \"Valor\") +\n  theme_minimal()"
   },
   {
     "objectID": "Presentacion/presentación_ejemplo.html#section-23",
     "href": "Presentacion/presentación_ejemplo.html#section-23",
     "title": "Descubriendo R y Python",
     "section": "",
-    "text": "Ejemplo estadística inferencial\n\n# Creamos dos grupos con datos simulados\ngrupo_A &lt;- rnorm(50, mean = 70, sd = 10) # Grupo A: media 70, desviación estándar 10\ngrupo_B &lt;- rnorm(50, mean = 75, sd = 12) # Grupo B: media 75, desviación estándar 12\n\n# Combinamos los datos en un dataframe\ndatos &lt;- data.frame(\n  Grupo = rep(c(\"A\", \"B\"), each = 50),\n  Valor = c(grupo_A, grupo_B)\n)\n\nt_test &lt;- t.test(grupo_A, grupo_B)\nprint(t_test)"
+    "text": "Resultados\n\n\n# A tibble: 2 × 6\n  Grupo Media Mediana Desviacion_Estandar Minimo Maximo\n  &lt;chr&gt; &lt;dbl&gt;   &lt;dbl&gt;               &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;\n1 A      70.3    69.3                9.26   50.3   91.7\n2 B      76.8    76.8               10.9    47.3  101."
   },
   {
     "objectID": "Presentacion/presentación_ejemplo.html#section-24",
     "href": "Presentacion/presentación_ejemplo.html#section-24",
     "title": "Descubriendo R y Python",
     "section": "",
-    "text": "Resultados\n\n\n\n    Welch Two Sample t-test\n\ndata:  grupo_A and grupo_B\nt = -3.793, df = 96.588, p-value = 0.0002594\nalternative hypothesis: true difference in means is not equal to 0\n95 percent confidence interval:\n -12.193431  -3.815942\nsample estimates:\nmean of x mean of y \n 67.46100  75.46568"
+    "text": "Ejemplo estadística inferencial\n\n# Creamos dos grupos con datos simulados\ngrupo_A &lt;- rnorm(50, mean = 70, sd = 10) # Grupo A: media 70, desviación estándar 10\ngrupo_B &lt;- rnorm(50, mean = 75, sd = 12) # Grupo B: media 75, desviación estándar 12\n\n# Combinamos los datos en un dataframe\ndatos &lt;- data.frame(\n  Grupo = rep(c(\"A\", \"B\"), each = 50),\n  Valor = c(grupo_A, grupo_B)\n)\n\nt_test &lt;- t.test(grupo_A, grupo_B)\nprint(t_test)"
   },
   {
     "objectID": "Presentacion/presentación_ejemplo.html#section-25",
     "href": "Presentacion/presentación_ejemplo.html#section-25",
     "title": "Descubriendo R y Python",
     "section": "",
-    "text": "Modelaje supervisadoModelaje no supervisadoDeep learning\n\n\nTécnica dentro del aprendizaje automático (machine learning) que utiliza conjuntos de datos etiquetados para entrenar algoritmos.\n\nModelos de Regresión y clasificación.(scikit-learn)\n…\n\n\n\nTécnica dentro del aprendizaje automático (machine learning) que utiliza conjuntos de datos NO etiquetados para entrenar algoritmos.\n\nClustering.\n…\n\n\n\nTécnica avanzada de inteligencia artificial (IA) que utiliza redes neuronales artificiales profundas para aprender automáticamente a partir de grandes cantidades de datos.\n\nRedes neuronales. (Keras)"
+    "text": "Resultados\n\n\n\n    Welch Two Sample t-test\n\ndata:  grupo_A and grupo_B\nt = -3.793, df = 96.588, p-value = 0.0002594\nalternative hypothesis: true difference in means is not equal to 0\n95 percent confidence interval:\n -12.193431  -3.815942\nsample estimates:\nmean of x mean of y \n 67.46100  75.46568"
   },
   {
     "objectID": "Presentacion/presentación_ejemplo.html#section-26",
     "href": "Presentacion/presentación_ejemplo.html#section-26",
     "title": "Descubriendo R y Python",
     "section": "",
-    "text": "Modelos típico: Regresión Lógistica.\n\\[\ny=\\frac{1}{1+e^{-(\\beta_{0}+\\beta_{1}*x_{1}+...+\\beta_{n}*x_{n})}}\n\\]"
+    "text": "Modelaje supervisadoModelaje no supervisadoDeep learning\n\n\nTécnica dentro del aprendizaje automático (machine learning) que utiliza conjuntos de datos etiquetados para entrenar algoritmos.\n\nModelos de Regresión y clasificación.(scikit-learn)\n…\n\n\n\nTécnica dentro del aprendizaje automático (machine learning) que utiliza conjuntos de datos NO etiquetados para entrenar algoritmos.\n\nClustering.\n…\n\n\n\nTécnica avanzada de inteligencia artificial (IA) que utiliza redes neuronales artificiales profundas para aprender automáticamente a partir de grandes cantidades de datos.\n\nRedes neuronales. (Keras)"
   },
   {
     "objectID": "Presentacion/presentación_ejemplo.html#section-27",
     "href": "Presentacion/presentación_ejemplo.html#section-27",
     "title": "Descubriendo R y Python",
     "section": "",
-    "text": "Ejemplo\n\n# Cargar librerías necesarias\nlibrary(dplyr)  # Para curva ROC\n\n# Descargar los datos del Titanic directamente desde un repositorio\nurl &lt;- \"https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv\"\ntitanic_data &lt;- read.csv(url)\n\n# Seleccionar las variables relevantes y eliminar valores faltantes\ntitanic_clean &lt;- titanic_data %&gt;%\n  select(Survived, Sex, Age) %&gt;%\n  na.omit()\n\n# Convertir las variables categóricas en factores\ntitanic_clean$Survived &lt;- as.factor(titanic_clean$Survived)\ntitanic_clean$Sex &lt;- as.factor(titanic_clean$Sex)\n\n# Ajustar el modelo de regresión logística\nmodel &lt;- glm(Survived ~ Sex + Age, data = titanic_clean, family = binomial)\n\n# Generar probabilidades predichas\nprobabilities &lt;- predict(model, type = \"response\")\n\n# Clasificar según un umbral (por ejemplo, 0.5)\npredicted_classes &lt;- ifelse(probabilities &gt; 0.5, 1, 0)\n\n# Extraer sensibilidad y especificidad\nsummary(model)"
+    "text": "Modelos típico: Regresión Lógistica.\n\\[\ny=\\frac{1}{1+e^{-(\\beta_{0}+\\beta_{1}*x_{1}+...+\\beta_{n}*x_{n})}}\n\\]"
   },
   {
     "objectID": "Presentacion/presentación_ejemplo.html#section-28",
     "href": "Presentacion/presentación_ejemplo.html#section-28",
     "title": "Descubriendo R y Python",
     "section": "",
-    "text": "Resultado\n\n\n\nCall:\nglm(formula = Survived ~ Sex + Age, family = binomial, data = titanic_clean)\n\nCoefficients:\n             Estimate Std. Error z value Pr(&gt;|z|)    \n(Intercept)  1.277273   0.230169   5.549 2.87e-08 ***\nSexmale     -2.465920   0.185384 -13.302  &lt; 2e-16 ***\nAge         -0.005426   0.006310  -0.860     0.39    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n(Dispersion parameter for binomial family taken to be 1)\n\n    Null deviance: 964.52  on 713  degrees of freedom\nResidual deviance: 749.96  on 711  degrees of freedom\nAIC: 755.96\n\nNumber of Fisher Scoring iterations: 4"
+    "text": "Ejemplo\n\n# Cargar librerías necesarias\nlibrary(dplyr)  # Para curva ROC\n\n# Descargar los datos del Titanic directamente desde un repositorio\nurl &lt;- \"https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv\"\ntitanic_data &lt;- read.csv(url)\n\n# Seleccionar las variables relevantes y eliminar valores faltantes\ntitanic_clean &lt;- titanic_data %&gt;%\n  select(Survived, Sex, Age) %&gt;%\n  na.omit()\n\n# Convertir las variables categóricas en factores\ntitanic_clean$Survived &lt;- as.factor(titanic_clean$Survived)\ntitanic_clean$Sex &lt;- as.factor(titanic_clean$Sex)\n\n# Ajustar el modelo de regresión logística\nmodel &lt;- glm(Survived ~ Sex + Age, data = titanic_clean, family = binomial)\n\n# Generar probabilidades predichas\nprobabilities &lt;- predict(model, type = \"response\")\n\n# Clasificar según un umbral (por ejemplo, 0.5)\npredicted_classes &lt;- ifelse(probabilities &gt; 0.5, 1, 0)\n\n# Extraer sensibilidad y especificidad\nsummary(model)"
   },
   {
     "objectID": "Presentacion/presentación_ejemplo.html#otros-tipos-de-análisis",
@@ -1068,7 +1068,7 @@
     "href": "Presentacion/presentación_ejemplo.html#section-29",
     "title": "Descubriendo R y Python",
     "section": "",
-    "text": "Resultado: evaluación\n\n\nSensibilidad: 0.8490566 \n\n\nEspecificidad: 0.6793103"
+    "text": "Resultado\n\n\n\nCall:\nglm(formula = Survived ~ Sex + Age, family = binomial, data = titanic_clean)\n\nCoefficients:\n             Estimate Std. Error z value Pr(&gt;|z|)    \n(Intercept)  1.277273   0.230169   5.549 2.87e-08 ***\nSexmale     -2.465920   0.185384 -13.302  &lt; 2e-16 ***\nAge         -0.005426   0.006310  -0.860     0.39    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n(Dispersion parameter for binomial family taken to be 1)\n\n    Null deviance: 964.52  on 713  degrees of freedom\nResidual deviance: 749.96  on 711  degrees of freedom\nAIC: 755.96\n\nNumber of Fisher Scoring iterations: 4"
   },
   {
     "objectID": "Presentacion/presentación_ejemplo.html#fin-de-la-tercera-parte.",
@@ -1089,7 +1089,7 @@
     "href": "Presentacion/presentación_ejemplo.html#section-30",
     "title": "Descubriendo R y Python",
     "section": "",
-    "text": "Máquinas de Soporte Vectorial\n\nPython también ofrece soporte para otro tipo de algoritmos de ML, como por ejemplo las clasificaciones con maquinas de vectores de soporte (SVM)"
+    "text": "Resultado: evaluación\n\n\nSensibilidad: 0.8490566 \n\n\nEspecificidad: 0.6793103"
   },
   {
     "objectID": "Presentacion/presentación_ejemplo.html#otros-usos",
@@ -1103,28 +1103,28 @@
     "href": "Presentacion/presentación_ejemplo.html#section-31",
     "title": "Descubriendo R y Python",
     "section": "",
-    "text": "Ejemplo"
+    "text": "Máquinas de Soporte Vectorial\n\nPython también ofrece soporte para otro tipo de algoritmos de ML, como por ejemplo las clasificaciones con maquinas de vectores de soporte (SVM)"
   },
   {
     "objectID": "Presentacion/presentación_ejemplo.html#section-33",
     "href": "Presentacion/presentación_ejemplo.html#section-33",
     "title": "Descubriendo R y Python",
     "section": "",
-    "text": "Redes neuronales en Python\n\nUna red neuronal consiste en entrelazar nodos entre los datos de entrada y de salida, que aumenta la complejidad potencial de la regresión\nLa redes neuronales artificiales se utilizan para el PLN, para tratamiento de imágenes, etc"
+    "text": "Ejemplo: Solución"
   },
   {
     "objectID": "Presentacion/presentación_ejemplo.html#section-35",
     "href": "Presentacion/presentación_ejemplo.html#section-35",
     "title": "Descubriendo R y Python",
     "section": "",
-    "text": "Modelos de epidemiología (SIR)\n\\[\\begin{equation}\nI' = 0\n\\end{equation}\\] \\[\\begin{equation}\n\\beta \\cdot SI = \\gamma \\cdot I \\nonumber\n\\end{equation}\\] \\[\\begin{equation}\nS = \\frac{\\gamma}{\\beta}\n\\end{equation}\\] \\[\\begin{equation}\nR + I = 1- \\frac{\\gamma}{\\beta} \\nonumber\n\\end{equation}\\]"
+    "text": "Modelos de epidemiología (SIR)\n\nModelo SIRImunidad de rebaño\n\n\n\\[\\begin{equation}\nS' = -\\beta \\cdot SI\n\\end{equation}\\] \\[\\begin{equation}\nI'= \\beta \\cdot SI - \\gamma \\cdot I\n\\end{equation}\\] \\[\\begin{equation}\nR' = \\gamma \\cdot I\n\\end{equation}\\]\n\n\n\\[\\begin{equation}\nI' = 0\n\\end{equation}\\] \\[\\begin{equation}\n\\beta \\cdot SI = \\gamma \\cdot I \\nonumber\n\\end{equation}\\] \\[\\begin{equation}\nS = \\frac{\\gamma}{\\beta}\n\\end{equation}\\] \\[\\begin{equation}\nR + I = 1- \\frac{\\gamma}{\\beta} \\nonumber\n\\end{equation}\\]"
   },
   {
     "objectID": "Presentacion/presentación_ejemplo.html#section-36",
     "href": "Presentacion/presentación_ejemplo.html#section-36",
-    "title": "Descubriendo R y Python en Osakidetza",
+    "title": "Descubriendo R y Python",
     "section": "",
-    "text": "Texto escrito (Revistas científicas).\n\n\n\nPonencias (Congresos y conferencias).\n\n\n\n\nInterna (Cuadro de mando).\n\n\n\n\nGlobal (Páginas web)."
+    "text": "Modelo SIRImunidad de rebaño\n\n\n\\[\\begin{equation}\nS' = -\\beta \\cdot SI\n\\end{equation}\\] \\[\\begin{equation}\nI'= \\beta \\cdot SI - \\gamma \\cdot I\n\\end{equation}\\] \\[\\begin{equation}\nR' = \\gamma \\cdot I\n\\end{equation}\\]\n\n\n\\[\\begin{equation}\nI' = 0\n\\end{equation}\\] \\[\\begin{equation}\n\\beta \\cdot SI = \\gamma \\cdot I \\nonumber\n\\end{equation}\\] \\[\\begin{equation}\nS = \\frac{\\gamma}{\\beta}\n\\end{equation}\\] \\[\\begin{equation}\nR + I = 1- \\frac{\\gamma}{\\beta} \\nonumber\n\\end{equation}\\]"
   },
   {
     "objectID": "CRISP-DM.html",
@@ -1537,14 +1537,14 @@
     "href": "Presentacion/presentación_ejemplo.html#section-32",
     "title": "Descubriendo R y Python",
     "section": "",
-    "text": "Ejemplo: Solución"
+    "text": "Ejemplo"
   },
   {
     "objectID": "Presentacion/presentación_ejemplo.html#section-34",
     "href": "Presentacion/presentación_ejemplo.html#section-34",
-    "title": "Descubriendo R y Python en Osakidetza",
+    "title": "Descubriendo R y Python",
     "section": "",
-    "text": "Mineria de texto.\n\n\n\nAnálisis geoespaciales.\n\n\n\n\nProblemas de optimización."
+    "text": "Redes neuronales en Python\n\nUna red neuronal consiste en entrelazar nodos entre los datos de entrada y de salida, que aumenta la complejidad potencial de la regresión\nLa redes neuronales artificiales se utilizan para el PLN, para tratamiento de imágenes, etc"
   },
   {
     "objectID": "Presentacion/presentación_ejemplo.html#más-usos",
@@ -1579,14 +1579,14 @@
     "href": "Presentacion/presentación_ejemplo.html#section-40",
     "title": "Descubriendo R y Python",
     "section": "",
-    "text": "Factorización de números primos\n\nPython es muy útil para operaciones aritméticas y cálculos de números primos.\nLos números primos (2, 3, 5, 7, 11, 13…) son muy útiles en encriptación (Short)\nHay primos muy grandes: 2147483647 o 2305843009213693951"
+    "text": "Teoría de juegos"
   },
   {
     "objectID": "Presentacion/presentación_ejemplo.html#section-41",
     "href": "Presentacion/presentación_ejemplo.html#section-41",
     "title": "Descubriendo R y Python",
     "section": "",
-    "text": "Texto escrito (Revistas científicas).\n\n\n\nPonencias (Congresos y conferencias).\n\n\n\n\nInterna (Cuadro de mando).\n\n\n\n\nGlobal (Páginas web)."
+    "text": "Factorización de números primos\n\nPython es muy útil para operaciones aritméticas y cálculos de números primos.\nLos números primos (2, 3, 5, 7, 11, 13…) son muy útiles en encriptación (Short)\nHay primos muy grandes: 2147483647 o 2305843009213693951"
   },
   {
     "objectID": "Presentacion/presentación_ejemplo.html#section-37",
@@ -1600,7 +1600,7 @@
     "href": "Presentacion/presentación_ejemplo.html#section-39",
     "title": "Descubriendo R y Python",
     "section": "",
-    "text": "Teoría de juegos"
+    "text": "Mineria de texto.\n\n\n\nAnálisis geoespaciales.\n\n\n\n\nProblemas de optimización."
   },
   {
     "objectID": "Presentacion/presentación_ejemplo.html#section-43",
@@ -1614,7 +1614,7 @@
     "href": "Presentacion/presentación_ejemplo.html#section-44",
     "title": "Descubriendo R y Python",
     "section": "",
-    "text": "Conocimiento➡️ Libertad➡️ Cuidar\n\n\n\n\n\n9 de abril de 2025. Descubriendo R y Python"
+    "text": "Revisión de la literatura\n\n\nRecogida de datos\n\n\nAnálisis de datos\n\n\nDifusión"
   },
   {
     "objectID": "Presentacion/presentación_ejemplo.html#en-el-café-del-turno",
@@ -1633,6 +1633,27 @@
   {
     "objectID": "Presentacion/presentación_ejemplo.html#section-46",
     "href": "Presentacion/presentación_ejemplo.html#section-46",
+    "title": "Descubriendo R y Python",
+    "section": "",
+    "text": "Sólo el conocimiento nos dará libertad\n\nSólo la libertad nos dará la capacidad de cuidar\n\n\nConocimiento➡️ Libertad➡️ Cuidar"
+  },
+  {
+    "objectID": "Presentacion/presentación_ejemplo.html#modelos-de-epidemiología-sir",
+    "href": "Presentacion/presentación_ejemplo.html#modelos-de-epidemiología-sir",
+    "title": "Descubriendo R y Python",
+    "section": "Modelos de epidemiología (SIR)",
+    "text": "Modelos de epidemiología (SIR)"
+  },
+  {
+    "objectID": "Presentacion/presentación_ejemplo.html#section-42",
+    "href": "Presentacion/presentación_ejemplo.html#section-42",
+    "title": "Descubriendo R y Python",
+    "section": "",
+    "text": "Texto escrito (Revistas científicas).\n\n\n\nPonencias (Congresos y conferencias).\n\n\n\n\nInterna (Cuadro de mando).\n\n\n\n\nGlobal (Páginas web)."
+  },
+  {
+    "objectID": "Presentacion/presentación_ejemplo.html#section-47",
+    "href": "Presentacion/presentación_ejemplo.html#section-47",
     "title": "Descubriendo R y Python",
     "section": "",
     "text": "Conocimiento➡️ Libertad➡️ Cuidar\n\n\n\n\n\n9 de abril de 2025. Descubriendo R y Python"
